@@ -1,6 +1,7 @@
 <template>
   <HeaderDc/>
   <MainPrincipal/>
+  <FooterDC/>
 </template>
 
 <script scoped>
@@ -8,12 +9,16 @@
 // import HelloWorld from './components/HelloWorld.vue'; esempio di importazioni di un componente 
 import HeaderDc from './components/HeaderDc.vue'
 import MainPrincipal from './components/MainPrincipal.vue'
+import FooterDC from './components/FooterDc.vue'
+
+
 //inserimento tag creazione componenti 
 export default {
 
   components: {
     HeaderDc,
     MainPrincipal,
+    FooterDC,
   }
 
 }

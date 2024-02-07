@@ -98,5 +98,6 @@
         text-transform: uppercase;
         margin-left: 30px;
     }
-}</style>
+}
+</style>
    
