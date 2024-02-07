@@ -1,17 +1,19 @@
 <template>
   <HeaderDc/>
+  <MainPrincipal/>
 </template>
 
 <script scoped>
 // Definizione delle opzioni del componente
 // import HelloWorld from './components/HelloWorld.vue'; esempio di importazioni di un componente 
 import HeaderDc from './components/HeaderDc.vue'
-
+import MainPrincipal from './components/MainPrincipal.vue'
 //inserimento tag creazione componenti 
 export default {
 
   components: {
-    HeaderDc
+    HeaderDc,
+    MainPrincipal,
   }
 
 }

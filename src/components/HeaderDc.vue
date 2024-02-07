@@ -1,10 +1,11 @@
 <template>
+    <!-- header che contiene la nav bar e logo -->
     <header>
         <div id="container">
             <div>
                 <img src="../assets/img/dc-logo.png" alt="logo">
             </div>
-            <div id="listDc">
+            <nav id="listDc">
                 <ul>
                     <li>
                         <a href="#">characters</a>
@@ -38,7 +39,7 @@
                     </li>
 
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
 </template>
@@ -49,21 +50,23 @@
 </script>
    
    
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
+
 #container {
     display: flex;
     justify-content: space-around;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 3px 20px;
+
+   
 
     #listDc {
-        display: flex;
-        align-items: center;
+       @include center;
     }
 
     ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
+       @include list;
     }
 
     li {
@@ -78,9 +81,9 @@
         color: black;
 
         &:hover {
-            color: rgb(5, 130, 249);
+            color: $linkBackBlu;
             padding-block: 40px;
-            border-bottom: 5px solid rgb(5, 130, 249);
+            border-bottom: 5px solid $linkBackBlu;
         }
 
     }
