@@ -1,12 +1,6 @@
 <template>
     <main id="containerMain">
-        <div id="row1">
-            <h2>
-                -- <span>&#10095;</span>
-                content goes here
-                <span>&#10094;</span>--
-            </h2>
-        </div>
+        
         <div id="row2">
             <ul>
                 <li>
@@ -44,7 +38,8 @@
     </main>
 </template>
   
-<script scoped>
+<script>
+
 </script>
   
   
@@ -55,48 +50,35 @@
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 
-#row1 {
-    background-color: rgb(28, 28, 28);
-    padding: 30px 30px 30px 150px;
-    
-   
+#containerMain {
 
-    h2 {
-        color: white;
-        text-transform: capitalize;
-        font-size: 25px;
-        margin: 0;
+    #row2 {
+        background-color: $linkBackBlu;
+        padding: 40px;
+        @include center;
+        justify-content: center;
 
 
-    }
-}
+        ul {
+            @include list;
+        }
 
-#row2 {
-    background-color: $linkBackBlu;
-    padding: 40px;
-    @include center;
-    justify-content: center;
+        li {
+            display: inline-block;
+        }
 
+        img {
+            margin-right: 20px;
+            width: 50px;
+            height: 60px;
+        }
 
-    ul {
-        @include list;
-    }
-
-    li {
-        display: inline-block;
-    }
-
-    img {
-        margin-right: 20px;
-        width: 50px;
-        height: 60px;
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin-left: 30px;
+        a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-left: 30px;
+        }
     }
 }
 </style>

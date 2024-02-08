@@ -97,8 +97,7 @@
                     </ul>
                 </div>
             </div>
-            <div>
-                <img id="logo-bg" src="../assets/img/dc-logo-bg.png" alt="">
+            <div id="logo-bg" >
             </div>
         </div>
         <div id="row2">
@@ -157,7 +156,8 @@
 #containerFooter {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
 
     #row1 {
         display: flex;
@@ -167,82 +167,97 @@
 }
 
 .bg-img {
-    background-image: url(../assets/img/jumbotron.jpg);
+    background-image: url(../assets/img/footer-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    
-   
+
+
 }
 
 #col1 {
     display: flex;
 
+    h6 {
+        margin-top: 10px;
+    }
+
 }
 
 h6 {
-    color: rgb(254, 8, 8);
+    color: white;
     text-transform: uppercase;
     font-size: 20px;
 }
-ul{
+
+ul {
     @include list;
-}
-li{
-    text-transform: capitalize;
-}
 
-a {
-    color: $linkBackBlu;
-    text-decoration: none;
-    font-size: 20px;
+    li {
+        text-transform: capitalize;
 
-}
-#logo-bg{
-    height: 90%;
-    display: block;
-}
+        a {
+            color: rgb(131, 130, 130);
+            text-decoration: none;
+            font-size: 20px;
 
-#row2{
-    background-color:rgb(48,48,48) ;
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-
-    #col2{
-        display: flex;
-        align-items: center;
-       
-       
-    
-        button{
-            text-transform: uppercase;
-            border: 1px solid $linkBackBlu;
-            padding: 8px;
-            background-color:rgb(48,48,48) ;
-            color: white;
         }
     }
 }
-    
- 
 
-
-
-#col3{
-    display: flex;
-    gap: 10px;
-
-    h6{
-        color: $linkBackBlu;
-        margin: 0;
-        display: flex;
-        align-items: center;
-    }
-    a{
-        margin-left: 10px;
-    }
+#logo-bg {
+    width: 100%;
+    background-image: url(../assets/img/dc-logo-bg.png);
+   background-position: right;
+    background-repeat: no-repeat;
 }
 
+#row1 {
+    display: flex;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+
+#row2 {
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    
+    
+
+    #col2 {
+        display: flex;
+        align-items: center;
+
+
+
+        button {
+            text-transform: uppercase;
+            border: 1px solid $linkBackBlu;
+            padding: 8px;
+            background-color: rgb(48, 48, 48);
+            color: white;
+        }
+    }
+
+    #col3 {
+     
+        display: flex;
+        gap: 10px;
+
+        h6 {
+            color: $linkBackBlu;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            margin-left: 10px;
+        }
+    }
+}
 </style>

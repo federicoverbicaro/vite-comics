@@ -1,7 +1,21 @@
 <template>
-  <HeaderDc/>
-  <MainPrincipal/>
-  <FooterDC/>
+
+
+  <header>
+    <HeaderDc/>
+  </header>
+
+  
+  <main>
+    <ListaFilms/>
+    <MainPrincipal/>
+  </main>
+
+
+  <footer>
+     <FooterDC/>
+  </footer>
+ 
 </template>
 
 <script scoped>
@@ -9,6 +23,8 @@
 // import HelloWorld from './components/HelloWorld.vue'; esempio di importazioni di un componente 
 import HeaderDc from './components/HeaderDc.vue'
 import MainPrincipal from './components/MainPrincipal.vue'
+import ListaFilms from './components/ListaFilms.vue'
+import CompoFilms from './components/CompoFilms.vue'
 import FooterDC from './components/FooterDc.vue'
 
 
@@ -18,6 +34,8 @@ export default {
   components: {
     HeaderDc,
     MainPrincipal,
+    ListaFilms,
+    CompoFilms,
     FooterDC,
   }
 
