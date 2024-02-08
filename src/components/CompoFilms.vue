@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div>
-            <img :src="propsSrc" alt="">
-            <h6>{{ propsTitolo }}</h6>
-        </div>
+
+        <img :src="propsSrc" alt="" height="80%" width="100%">
+        <h6>{{ propsTitolo }}</h6>
 
     </div>
+    
 </template>
   
 <script>
@@ -30,30 +30,24 @@ export default {
 div {
 
     display: flex;
-    flex-basis: calc(100% / 6 );
+    flex-basis: calc(100% / 6 - 10px);
+    flex-direction: column;
+    
 
-    div {
-        display: flex;
-       flex-direction: column;
-       
-       
-      
-        img {
-            aspect-ratio: 1;
-            height: 100px;
-            width: 100px;
-            
-
-        }
-
-        h6 {
-            font-size: 10px;
-            color: white;
-            text-transform: uppercase;
-            overflow-wrap: break-word;
-            max-width: 80px;
-        }
+    img {
+        display: block;
     }
+
+    h6 {
+        font-size: 10px;
+        color: white;
+        text-transform: uppercase;
+        overflow-wrap: break-word;
+        max-width: 80px;
+        margin: 0;
+        padding-top: 10px;
+    }
+
 
 
 

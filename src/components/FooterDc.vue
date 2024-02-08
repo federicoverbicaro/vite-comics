@@ -162,6 +162,7 @@
     #row1 {
         display: flex;
         height: auto;
+        padding: 30px;
     }
 
 }
@@ -178,6 +179,7 @@
 
 #col1 {
     display: flex;
+  
 
     h6 {
         margin-top: 10px;
@@ -200,7 +202,7 @@ ul {
         a {
             color: rgb(131, 130, 130);
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
 
         }
     }
@@ -256,6 +258,7 @@ ul {
         }
 
         a {
+            
             margin-left: 10px;
         }
     }

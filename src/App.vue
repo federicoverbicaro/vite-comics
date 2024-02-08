@@ -37,6 +37,7 @@ export default {
     ListaFilms,
     CompoFilms,
     FooterDC,
+    
   }
 
 }
